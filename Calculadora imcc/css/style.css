@@ -3,13 +3,21 @@ body{
     margin: 3rem 10rem 3rem 10rem;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    
 }
 
 
-h1{ 
+.image-text { 
+    font-size: 5rem;
     text-align: center;
-    font-size: 2rem;
-    color: #8707ff;
+ background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3308.jpg?w=1060&t=st=1680631126~exp=1680631726~hmac=36f5c4419829496fb83e71dbb37bcf7c02eb28e5841ee45e70554f52537a2d89);
+    background-size:cover;
+    background-clip:text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+
+   
 }
 
 div{
@@ -28,9 +36,19 @@ div{
     max-width: 190px;
    }
    
-   .input:active {
-    box-shadow: 2px 2px 15px #8707ff inset;
-   }
+   
+   .input:focus {
+       color: rgba(187, 30, 255, 0.982);
+       background-color: #212121;
+       outline-color: #CC00FF;
+       box-shadow: -3px -3px 15px #CC00FF;
+       transition: .1s;
+       transition-property: box-shadow;
+    }
+    
+    .input:active {
+     box-shadow: 2px 2px 15px #8707ff inset;
+    }
 
    button {
     --glow-color: rgb(217, 176, 255);
@@ -51,6 +69,9 @@ div{
     text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
     transition: all 0.3s;
+    width: 20rem;
+    height: 4.5rem;
+
    }
    
    button::after {
@@ -80,3 +101,17 @@ div{
            0 0 2.5em 2em var(--glow-spread-color),
            inset 0 0 .5em .25em var(--glow-color);
    }
+
+   div.container{
+    margin-top: 5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 80%;
+   }
+
+.resultado{
+    color:#420056;
+    text-align: center;
+    font-size: 3rem;
+}

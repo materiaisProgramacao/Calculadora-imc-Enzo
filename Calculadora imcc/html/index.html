@@ -12,19 +12,19 @@
 
 </head>
 <body>
-    <h1>Calculadora de IMC</h1>
+    <h1 class="image-text">Calculadora de IMC</h1>
 
-    <div>
+    <div class="container">
     <form action="">
     <label for="Altura">Altura</label> <br>
-    <input type="text" name="Altura" class="input" placeholder="Escreva sua altura"> <br>
+    <input type="number" name="Altura" class="input" placeholder="Escreva sua altura" id="altura"> <br>
     <label for="Peso">Peso</label> <br>
-    <input type="text" name="Peso" class="input" placeholder="Escreva seu peso"> 
-    <button> Calcule  </button>
-
-      
+    <input type="number" name="Peso" class="input" placeholder="Escreva seu peso" id="peso"> 
+    
 </form>
+<button onclick="dividir()"> Calcule  </button>
     </div>
+    <p class="resultado">Seu IMC é de  <span id="spanId"></span></p>
 </body>
-<script src="../java script/header.js"></script>
+<script src="../java script/script.js"></script>
 </html>
