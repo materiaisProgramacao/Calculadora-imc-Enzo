@@ -111,7 +111,17 @@ div{
    }
 
 .resultado{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color:#420056;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
 }
+
+#spanId{
+    background-image: url(https://i.pinimg.com/originals/b1/3e/c4/b13ec46eaa4d918f4c3496330e589477.gif);
+    background-size:cover;
+    background-clip:text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
